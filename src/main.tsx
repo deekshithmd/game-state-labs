@@ -7,13 +7,13 @@ import App from './App.tsx'
 // Create QueryClient instance
 const queryClient = new QueryClient()
 
-// Enable MSW in development
-if (import.meta.env.DEV) {
-  const { worker } = await import('./mocks/browser')
-  await worker.start({
-    onUnhandledRequest: 'warn',
-  })
-}
+// // Enable MSW in development
+// if (import.meta.env.DEV) {
+const { worker } = await import('./mocks/browser')
+await worker.start({
+  onUnhandledRequest: 'warn',
+})
+// }
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
