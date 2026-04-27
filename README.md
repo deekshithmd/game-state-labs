@@ -1,6 +1,9 @@
 # Game state labs assignment
 
-Setup
+### Live link
+[https://game-state-labs.vercel.app/](https://game-state-labs.vercel.app/)
+
+### Local Setup
 
 1. Clone the repo - ``` git clone https://github.com/deekshithmd/game-state-labs.git```
 2. run ```npm install``` to install the dependencies
