@@ -56,7 +56,7 @@ export function useTimeSeries(id: string, options = {}) {
         enabled: !!id,
         staleTime: 5 * 60 * 1000,
         gcTime: 10 * 60 * 1000,
-        retry: 2,
+        retry: 0,
         ...options,
     })
 }
